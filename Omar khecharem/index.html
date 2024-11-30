@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Calligraffitti&family=Nunito:wght@200..1000&family=Playwright:ital,wght@0,400&family=Podkova:wght@400..800&family=Poppins:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="omar.jpg" type="image/x-icon">
+    <title>Omar Portfolio</title>
+</head>
+<body class="font-nunito h-screen transition-colors duration-500 ease-in-out  ">
+
+    <!-- Intro Section -->
+    <div class="space-y-16 h-2/3 md:h-screen bg-gradient-to-t from-indigo-200 relative overflow-hidden">
+        
+        <!-- Navbar -->
+        <nav class="fixed w-full top-0 bg-white z-10 h-auto shadow-md">
+            <div class="container sm:mx-auto py-5 flex items-center justify-between px-6">
+                <!-- Logo and Name -->
+                <div class="flex items-center gap-2">
+                    <img src="omar.jpg" alt="Logo" class="sm:h-24 sm:w-24 w-16 h-16 rounded-full shadow-2xl">
+                    <span class="text-xl text-pretty font-bold">Omar Khecharem</span>
+                </div>
+
+                <!-- Navbar Links -->
+                <ul class="md:flex space-x-10 hidden">
+                    <li class="hover:text-gray-600 cursor-pointer"><a href="#">Home</a></li>
+                    <li class="hover:text-gray-600 cursor-pointer"><a href="#about">About</a></li>
+                    <li class="hover:text-gray-600 cursor-pointer"><a href="#services">Services</a></li>
+                    <li class="hover:text-gray-600 cursor-pointer"><a href="#contact">Contact</a></li>
+                </ul>
+
+                <!-- Dark Mode Icon -->
+               <!-- Dark Mode Toggle Button -->
+                <div class="hidden md:flex gap-3 ">
+                <a href=""><img width="40" height="40" src="https://img.icons8.com/fluency/48/facebook-new.png" alt="facebook-new"/></a>
+                <a href=""><img width="40" height="40" src="https://img.icons8.com/3d-fluency/94/github.png" alt="github"/></a>
+                <a href=""><img width="40" height="40" src="https://img.icons8.com/fluency/48/linkedin.png" alt="linkedin"/></a>
+                  
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="space-y-1 md:hidden cursor-pointer z-20" id="btn">
+                    <div class="w-6 h-0.5 bg-black"></div>
+                    <div class="w-6 h-0.5 bg-black"></div>
+                    <div class="w-6 h-0.5 bg-black"></div>
+                </div>
+
+                <!-- Mobile Dropdown -->
+                <ul class="hidden bg-indigo-900 absolute left-0 top-0 w-full p-10 rounded-b-3xl space-y-10 text-white z-10" id="items">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Hero Image -->
+        <img src="photoFormateur.png" alt="Hero" class="absolute bottom-0 right-0 object-cover h-3/4 lg:left-0 mx-auto">
+
+        <!-- Decorative Circle -->
+        <div class="hidden lg:block absolute -bottom-1/4 mx-auto left-0 right-0 w-[40rem] h-[40rem] bg-indigo-900 rounded-full -z-10"></div>
+
+        <!-- Intro Text -->
+        <div class="absolute top-1/3 left-5 text-3xl sm:left-0 sm:text-4xl md:left-1/5 md:text-6xl lg:left-5 xl:left-48 w-5">
+            <span class="text-gray-600">Freelance</span>
+            <p class="text-red-500" id="text"></p>
+        </div>
+
+        <!-- Introduction Card -->
+        <div class="hidden lg:flex flex-col absolute border bottom-56 top-20 right-10 bg-white p-5 h-fit w-1/3 gap-5 rounded-md shadow-xl">
+            <h1 class="text-indigo-600 text-4xl font-bold">👋 Hello!</h1>
+            <p class="text-gray-500">
+                I'm Omar, an Integrated Preparatory Cycle Student with a passion for technology and innovation. As a dedicated Front-End Developer, I specialize in React JS, Tailwind CSS, HTML, and CSS, creating clean, responsive, and visually appealing web designs. Beyond coding, I enjoy exploring UI/UX design using Figma, and I strive to blend creativity with functionality in every project I undertake. My journey is fueled by a commitment to continuous learning and a drive to turn ideas into impactful solutions.
+            </p>
+            <a href="#contact" class="bg-indigo-600 text-white text-xl px-3 py-2 w-fit">Contact me</a>
+        </div>
+    </div>
+
+
+
+    <!-- About Section -->
+<div id="about" class="mt-10">
+  <div class="shadow-2xl px-5 border-blue-500 flex flex-col lg:flex-row w-3/4 h-auto m-auto gap-10 p-8 rounded-md">
+      <!-- Profile Image -->
+      <div class="relative w-full lg:w-1/3 flex justify-center items-center">
+          <img src="omarFondBleu.png" alt="Omar Profile" class="w-48 h-48 rounded-full shadow-lg object-cover">
+      </div>
+
+      <!-- About Content -->
+      <div class="flex flex-col w-full lg:w-2/3 justify-center space-y-4">
+          <h1 class="text-4xl text-red-600 font-bold text-center lg:text-left">About Me</h1>
+          <p class="text-gray-700">
+              Hello! I'm Omar, a passionate and driven **Integrated Preparatory Cycle student** with a love for technology and front-end development. My journey combines creativity, problem-solving, and teamwork, honed through participation in **two hackathons** and various collaborative projects.
+          </p>
+          <ul class="space-y-2">
+              <li><span class="text-2xl font-serif font-bold">🎓 Education:</span> Building strong foundations in computer science and engineering.</li>
+              <li><span class="text-2xl font-serif font-bold">💻 Skills:</span> Proficient in **React JS, Tailwind, HTML, CSS**, and design tools like **Figma**.</li>
+              <li><span class="text-2xl font-serif font-bold">🚀 Hackathons:</span> Gained hands-on experience in solving real-world problems with innovative teams.</li>
+              <li><span class="text-2xl font-serif font-bold">🎯 Freelance Work:</span> Delivering professional and functional front-end projects, including personal portfolios and business websites.</li>
+              <li><span class="text-2xl font-serif font-bold">🎨 Hobbies:</span> Combining technology with creativity through **UI/UX design** staying active in sports.</li>
+          </ul>
+      </div>
+  </div>
+
+  <!-- About Images Gallery -->
+
+<div class="bg-indigo-200 w-full py-10">
+    <h1 class="text-center text-red-500 font-bold text-4xl py-8">My Certifications</h1>
+
+
+        <div class="container mx-auto px-5">
+           
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Google Digital Marketing Certification -->
+                <div class="bg-white shadow-md p-5 rounded-lg">
+                    <img src="google.jpg" alt="Google Digital Marketing Certification" class="w-full h-48 object-cover rounded-md">
+                    <h2 class="text-indigo-600 text-xl mt-4 font-bold">Google Digital Marketing</h2>
+                    <p class="text-gray-600 mt-2">
+                        Comprehensive training in digital marketing strategies and data analysis, completed in Arabic. 
+                    </p>
+                </div>
+    
+                <!-- Udemy HTML & CSS Design Certification -->
+                <div class="bg-white shadow-md p-5 rounded-lg">
+                    <img src="udemy.jpg"Udemy HTML CSS Certification" class="w-full h-48 object-cover rounded-md">
+                    <h2 class="text-indigo-600 text-xl mt-4 font-bold">Udemy: HTML & CSS Design</h2>
+                    <p class="text-gray-600 mt-2">
+                        Mastered the principles of web design by creating professional templates with modern and responsive layouts using HTML and CSS.
+                    </p>
+                </div>
+    
+                <!-- FreeCodeCamp Responsive Web Design Certification -->
+                <div class="bg-white shadow-md p-5 rounded-lg">
+                    <img src="freecodecamp.jpg" alt="FreeCodeCamp Responsive Web Design Certification" class="w-full h-48 object-cover rounded-md">
+                    <h2 class="text-indigo-600 text-xl mt-4 font-bold">FreeCodeCamp: Responsive Web Design</h2>
+                    <p class="text-gray-600 mt-2">
+                        Acquired in-depth knowledge of HTML and CSS, focusing on building responsive websites optimized for all devices.
+                    </p>
+                </div>
+
+        
+        </div>
+    </div>
+    
+
+</div>
+
+
+
+
+<!-- Services Section -->
+<div id="services" class="my-20 bg-indigo-50 py-16">
+  <div class="container mx-auto px-5">
+      <h1 class="text-4xl text-indigo-600 font-bold text-center mb-12">My Services</h1>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+        <!-- Service 1: Front-End Development -->
+        <div class="bg-white shadow-md rounded-lg p-8">
+            <img src="https://cdn-icons-png.flaticon.com/512/3050/3050145.png" alt="Front-End Development" class="w-20 h-20 mx-auto mb-4">
+            <h2 class="text-2xl text-indigo-600 font-semibold text-center">Front-End Development</h2>
+            <p class="text-gray-600 mt-4 text-center">
+                Creating responsive and visually appealing websites using <strong>HTML</strong>, <strong>CSS</strong>, <strong>Tailwind</strong>, and <strong>React JS</strong>.
+            </p>
+        </div>
+    
+        <!-- Service 2: UI/UX Design -->
+        <div class="bg-white shadow-md rounded-lg p-8">
+            <img src="https://cdn-icons-png.flaticon.com/128/5968/5968705.png" alt="UI/UX Design" class="w-20 h-20 mx-auto mb-4">
+            <h2 class="text-2xl text-indigo-600 font-semibold text-center">UI/UX Design</h2>
+            <p class="text-gray-600 mt-4 text-center">
+                Designing intuitive and user-friendly interfaces with a focus on functionality and aesthetics using <strong>Figma</strong>.
+            </p>
+        </div>
+    
+        <!-- Service 3: Freelance Projects -->
+        <div class="bg-white shadow-md rounded-lg p-8">
+            <img src="https://cdn-icons-png.flaticon.com/512/1006/1006555.png" alt="Freelance Projects" class="w-20 h-20 mx-auto mb-4">
+            <h2 class="text-2xl text-indigo-600 font-semibold text-center">Freelance Projects</h2>
+            <p class="text-gray-600 mt-4 text-center">
+                Helping individuals and businesses bring their ideas to life with custom web solutions tailored to their needs.
+            </p>
+        </div>
+    </div>
+    
+        
+  </div>
+</div>
+
+
+
+<!-- Contact Section -->
+<div id="contact" class="bg-indigo-50 py-16">
+  <div class="container mx-auto px-5">
+      <h1 class="text-4xl text-indigo-600 font-bold text-center mb-12">Contact Me</h1>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+          <!-- Contact Form -->
+          <div class="bg-white shadow-md rounded-lg p-8">
+              <h2 class="text-2xl text-indigo-600 font-semibold mb-4">Send Me a Message</h2>
+              <form   action="https://formspree.io/f/mbljppvp" method="POST" class="space-y-4">
+                  <div>
+                      <label for="name" class="block text-gray-600">Your Name</label>
+                      <input type="text" id="name" name="name" class="w-full border border-gray-300 p-2 rounded-md focus:ring-indigo-600 focus:border-indigo-600" placeholder="Enter your name" required>
+                  </div>
+                  <div>
+                      <label for="email" class="block text-gray-600">Your Email</label>
+                      <input type="email" id="email" name="_replyto" class="w-full border border-gray-300 p-2 rounded-md focus:ring-indigo-600 focus:border-indigo-600" placeholder="Enter your email" required>
+                  </div>
+                  <div>
+                      <label for="message" class="block text-gray-600">Your Message</label>
+                      <textarea id="message" name="message" rows="5" class="w-full border border-gray-300 p-2 rounded-md focus:ring-indigo-600 focus:border-indigo-600" placeholder="Write your message" required></textarea>
+                  </div>
+                  <button type="submit" class="bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-700">Send Message</button>
+              </form>
+          </div>
+
+          <!-- Contact Information -->
+          <div class="flex flex-col justify-center items-center bg-white shadow-md rounded-lg p-8">
+              <h2 class="text-2xl text-indigo-600 font-semibold mb-4">Get In Touch</h2>
+              <p class="text-gray-600 mb-6 text-center">
+                  Feel free to reach out to me for collaboration, project inquiries, or just to say hello. I'd love to hear from you!
+              </p>
+              <ul class="space-y-4">
+                  <li class="flex items-center gap-3">
+                      <img src="https://cdn-icons-png.flaticon.com/128/9364/9364921.png" alt="Phone" class="w-6 h-6">
+                      <span class="text-gray-600">+216 56 685 518</span>
+                  </li>
+                  <li class="flex items-center gap-3">
+                      <img src="https://cdn-icons-png.flaticon.com/128/3894/3894024.png" alt="Email" class="w-6 h-6 ">
+                      <span class="text-gray-600">omar.khecharem@isimg.tn</span>
+                  </li>
+                  <li class="flex items-center gap-3">
+                      <img src="https://cdn-icons-png.flaticon.com/128/8511/8511829.png" alt="Location" class="w-6 h-6">
+                      <span class="text-gray-600">Gabès, Tunisia</span>
+                  </li>
+              </ul>
+              <div class="flex space-x-4 mt-6">
+                  <a href="https://www.linkedin.com/in/omar-khecharem" target="_blank">
+                    <img width="40" height="40" src="https://img.icons8.com/fluency/48/linkedin.png"  class="w-8 h-8 hover:scale-110" alt="linkedin"/>
+                  </a>
+                  <a href="https://github.com/omarkhecharem" target="_blank">
+                    <img width="40" height="40" src="https://img.icons8.com/3d-fluency/94/github.png" alt="github" class="w-8 h-8 hover:scale-110"/>
+                  </a>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<!-- Footer Section -->
+<footer class="bg-indigo-900 text-white py-6">
+  <div class="container mx-auto px-5 flex flex-col md:flex-row items-center justify-between">
+      <!-- Footer Text -->
+      <p class="text-sm text-center md:text-left">
+          © 2024 Omar Khecharem. All rights reserved.
+      </p>
+     
+
+
+      <!-- Social Media Links -->
+      <div class="flex space-x-4 mt-4 md:mt-0">
+          <a href="https://www.linkedin.com/in/omar-khecharem" target="_blank" class="hover:text-indigo-300">
+              <img src="https://img.icons8.com/fluency/48/linkedin.png" alt="LinkedIn" class="w-6 h-6">
+          </a>
+          <a href="https://github.com/omarkhecharem" target="_blank" class="hover:text-indigo-300">
+            <img width="40" height="40" src="https://img.icons8.com/3d-fluency/94/github.png" alt="github" class="w-6 h-6"/>
+             
+          </a>
+          <a href="mailto:omar.khecharem@isimg.tn" class="hover:text-indigo-300">
+              <img src="https://cdn-icons-png.flaticon.com/128/3894/3894024.png" alt="Email" class="w-6 h-6 ">
+          </a>
+      </div>
+  </div>
+</footer>
+
+
+
+<script src="script.js"></script>
+
+    <script src="autotyping.js"></script>
+
+</body>
+</html>
